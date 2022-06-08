@@ -10,6 +10,14 @@ var viz,
 vizLen = vizList.length,
 vizCount = 0;
 
+//-----------------------
+let currUser;
+function wp_get_current_user() {
+    currUser = _wp_get_current_user();
+    console.log(currUser);
+};
+//-----------------------
+
 function initViz() {
     fetch('https://phdata-tableau-jwt.herokuapp.com/')
         .then(result => result.json())
