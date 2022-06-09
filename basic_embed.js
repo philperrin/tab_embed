@@ -19,7 +19,7 @@ function initViz() {
         }).catch(err => console.error(err));
 };
 function initVizB() {
-    fetch('https://phdata-tableau-jwt.herokuapp.com/')
+    fetch('https://phdata-tableau-jwt.herokuapp.com/?username='+userEmail)
         .then(result => result.json())
         .then((output) => {
             vizDiv.setAttribute('token', output.token);
