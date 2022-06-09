@@ -9,9 +9,10 @@ var vizList = [
 var viz,
 vizLen = vizList.length,
 vizCount = 0;
+let userEmail = document.getElementById("userEmail").textContent.trim();
 
 function initViz() {
-    fetch('https://phdata-tableau-jwt.herokuapp.com/')
+    fetch('https://phdata-tableau-jwt.herokuapp.com/?username='+userEmail)
         .then(result => result.json())
         .then((output) => {
             vizDisplay.setAttribute('token', output.token);
