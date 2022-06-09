@@ -10,14 +10,6 @@ var viz,
 vizLen = vizList.length,
 vizCount = 0;
 
-//-----------------------
-//let currUser;
-//function wp_get_current_user() {
-//    currUser = _wp_get_current_user();
-//    console.log('User:', currUser);
-//};
-//-----------------------
-
 function initViz() {
     fetch('https://phdata-tableau-jwt.herokuapp.com/')
         .then(result => result.json())
@@ -187,4 +179,3 @@ vizDisplay.addEventListener('markselectionchanged', getSelectedMarks);
 
 document.addEventListener('DOMContentLoaded', initViz);
 document.addEventListener('DOMContentLoaded', initVizB);
-//document.addEventListener('DOMContentLoaded', wp_get_current_user);
