@@ -11,11 +11,11 @@ vizLen = vizList.length,
 vizCount = 0;
 
 //-----------------------
-let currUser;
-function wp_get_current_user() {
-    currUser = _wp_get_current_user();
-    console.log('User:', currUser);
-};
+//let currUser;
+//function wp_get_current_user() {
+//    currUser = _wp_get_current_user();
+//    console.log('User:', currUser);
+//};
 //-----------------------
 
 function initViz() {
@@ -187,4 +187,4 @@ vizDisplay.addEventListener('markselectionchanged', getSelectedMarks);
 
 document.addEventListener('DOMContentLoaded', initViz);
 document.addEventListener('DOMContentLoaded', initVizB);
-document.addEventListener('DOMContentLoaded', wp_get_current_user);
+//document.addEventListener('DOMContentLoaded', wp_get_current_user);
